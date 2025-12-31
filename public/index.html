@@ -15,14 +15,16 @@
     <div class="container nav-bar">
       <a class="brand" href="#">Archon</a>
       <nav class="nav-links">
-        <a href="#agents">Agents</a>
-        <a href="#approach">Approach</a>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#framework">Framework</a>
+        <a href="#services">Services</a>
         <a class="outline" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="home">
     <section class="hero">
       <div class="container hero-content">
         <div class="hero-text">
@@ -34,7 +36,7 @@
           </p>
           <div class="cta-row">
             <a class="btn solid" href="#contact">Start an Agent Plan</a>
-            <a class="btn ghost" href="#approach">Talk to an Advisor</a>
+            <a class="btn ghost" href="#framework">See the Framework</a>
           </div>
           <div class="pillars">
             <div class="pillar">
@@ -62,9 +64,38 @@
         </div>
         <div class="hero-visual">
           <div class="panel">
-            <img src="images/hero/neon.png" alt="Wireframe diagrams" loading="lazy">
+            <img src="images/hero/mesh_lines.jpg" alt="Wireframe diagrams" loading="lazy">
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container intro-grid">
+        <article class="intro-card">
+          <div class="icon-badge">A</div>
+          <h3>What Archon is</h3>
+          <p>
+            An AI firm focused on specialized agents. We ship agents, the frameworks that power them,
+            and the playbooks to run them safely.
+          </p>
+        </article>
+        <article class="intro-card">
+          <div class="icon-badge">↗</div>
+          <h3>Why AI agents matter</h3>
+          <p>
+            Agents turn AI into clear roles: tutors, interviewers, reviewers. With defined scope,
+            you can measure outcomes and earn trust from teams.
+          </p>
+        </article>
+        <article class="intro-card">
+          <div class="icon-badge">◎</div>
+          <h3>What makes Archon different</h3>
+          <p>
+            We design for governance from day one. Every agent ships with constraints, evaluation loops,
+            and integration paths instead of ad-hoc prompts.
+          </p>
+        </article>
       </div>
     </section>
 
@@ -82,11 +113,11 @@
       </div>
     </section>
 
-    <section class="services" id="agents">
+    <section class="services" id="products">
       <div class="container">
         <header class="section-head">
-          <h3>Our Agents & Services</h3>
-          <p>Specialized agents designed for real work, backed by frameworks and advisory.</p>
+          <h3>Products</h3>
+          <p>Ready-to-ship agents with clear roles, plus room for new specialties.</p>
         </header>
         <div class="card-grid">
           <article class="card">
@@ -109,10 +140,10 @@
           </article>
           <article class="card">
             <div class="card-icon">03</div>
-            <h4>Custom Agent Design</h4>
+            <h4>Future Specialized Agents</h4>
             <p>
-              Advisory for design, framework selection, pilot implementation, and scaling guidance.
-              We help you decide where agents belong, what they should do, and how to measure success.
+              A growing catalog: onboarding coaches, QA reviewers, operations copilots. Built on the same
+              framework so new roles launch quickly and stay governable.
             </p>
             <a class="learn" href="#contact">Learn more</a>
           </article>
@@ -120,7 +151,7 @@
       </div>
     </section>
 
-    <section class="frameworks">
+    <section class="frameworks" id="framework">
       <div class="container frameworks-grid">
         <div class="frameworks-text">
           <h3>Frameworks That Scale</h3>
@@ -138,25 +169,100 @@
               Scale systems intentionally instead of building fragile monoliths. Frameworks turn AI experimentation into operational systems.
             </li>
           </ul>
+          <div class="framework-meta">
+            <div>
+              <p class="eyebrow">Who this is for</p>
+              <p class="muted-tight">Product leads, ops teams, and builders who need reliability over novelty.</p>
+            </div>
+            <div>
+              <p class="eyebrow">How it helps</p>
+              <p class="muted-tight">Fewer moving parts, clearer handoffs, and faster compliance reviews.</p>
+            </div>
+          </div>
         </div>
         <div class="frameworks-visual">
-          <div class="panel">
-            <img src="images/hero/neural.jpg" alt="Framework blueprint" loading="lazy">
+          <div class="panel diagram">
+            <div class="diagram-row">
+              <div class="node">
+                <span class="node-label">Specialize</span>
+                <small>Clear role + constraints</small>
+              </div>
+              <div class="node">
+                <span class="node-label">Pilot</span>
+                <small>Small surface, measurable</small>
+              </div>
+              <div class="node">
+                <span class="node-label">Scale</span>
+                <small>Integrations + guardrails</small>
+              </div>
+            </div>
+            <div class="diagram-hint">A simple path: break work into roles, validate fast, then expand with safety.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cta" id="contact">
+    <section class="services services-secondary" id="services">
+      <div class="container">
+        <header class="section-head">
+          <h3>Services</h3>
+          <p>Consulting, integration, and implementation for organizations that want agents that stay reliable.</p>
+        </header>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon">A</div>
+            <h4>Custom Agent Design</h4>
+            <p>
+              Workshops to choose the right agent roles, craft constraints, and set success metrics before any code is written.
+            </p>
+            <a class="learn" href="#contact">Plan a design sprint</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">B</div>
+            <h4>Integration & Scaling</h4>
+            <p>
+              Connect agents to data, tools, and workflows. We add observability and evaluation so they improve safely.
+            </p>
+            <a class="learn" href="#contact">Discuss integration</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">C</div>
+            <h4>Advisory & Implementation</h4>
+            <p>
+              Build-versus-buy decisions, governance patterns, and implementation support for teams moving from MVP to production.
+            </p>
+            <a class="learn" href="#contact">Book advisory time</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta contact" id="contact">
       <div class="container cta-inner">
         <div>
           <p class="eyebrow">Ready to design your first agent?</p>
           <h3>Move from experimentation to structured, governable AI systems.</h3>
-          <p>Start with a plan or explore a framework with our advisors.</p>
+          <p>Tell us what you need. We’ll share a simple plan and a safe starting pilot.</p>
         </div>
-        <div class="cta-buttons">
-          <a class="btn solid" href="mailto:hello@archon.ai">Start an Agent Plan</a>
-          <a class="btn ghost" href="#approach">Explore a Framework</a>
+        <div class="cta-form">
+          <form>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com">
+            </label>
+            <label>
+              Project need
+              <textarea name="project" rows="3" placeholder="What problem should the agent solve?"></textarea>
+            </label>
+            <div class="cta-buttons">
+              <button class="btn solid" type="submit">Send message</button>
+              <a class="btn ghost" href="mailto:hello@archon.ai">Email us</a>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -173,13 +279,13 @@
       </div>
       <div class="footer-col">
         <h5>Agents</h5>
-        <a href="#agents">Tutor Agents</a>
-        <a href="#agents">Interview Agents</a>
-        <a href="#agents">Custom Design</a>
+        <a href="#products">Tutor Agents</a>
+        <a href="#products">Interview Agents</a>
+        <a href="#services">Custom Design</a>
       </div>
       <div class="footer-col">
         <h5>Company</h5>
-        <a href="#approach">About</a>
+        <a href="#home">Home</a>
         <a href="#approach">Approach</a>
         <a href="#contact">Contact</a>
       </div>
