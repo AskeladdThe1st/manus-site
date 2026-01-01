@@ -25,20 +25,20 @@
   </header>
 
   <main>
-    <section class="page-hero products-hero">
+    <section class="page-hero products-hero" data-reveal>
       <div class="container">
-        <p class="eyebrow" data-cms-key="heroEyebrow">Products</p>
-        <h1 data-cms-key="heroTitle">Agent systems designed for narrow, measurable roles.</h1>
-        <p class="page-lede" data-cms-key="heroLede">
+        <p class="eyebrow" data-cms-key="heroEyebrow" data-stagger>Products</p>
+        <h1 data-cms-key="heroTitle" data-stagger>Agent systems designed for narrow, measurable roles.</h1>
+        <p class="page-lede" data-cms-key="heroLede" data-stagger>
           Tutor agents, interview agents, and a growing catalog share the same role-boundary-evaluation spine.
           This page details fit, use, and limits.
         </p>
         <div class="grid-two">
-          <div class="quiet-card">
+          <div class="quiet-card" data-stagger>
             <h4 data-cms-key="overviewTitle">System overview</h4>
             <p class="muted-tight" data-cms-key="overviewCopy">Every agent: defined inputs, explicit outputs, scoped boundaries, and evaluation loops with escalation.</p>
           </div>
-          <div class="quiet-card">
+          <div class="quiet-card" data-stagger>
             <h4 data-cms-key="excelTitle">Where they excel</h4>
             <p class="muted-tight" data-cms-key="excelCopy">Structured work that benefits from repeatability, auditability, and governed scaling—not open-ended chat.</p>
           </div>
@@ -48,19 +48,19 @@
 
     <section class="section-quiet">
       <div class="container">
-        <h3 data-cms-key="availableHeading">Overview of available agents</h3>
-        <div class="grid-three">
-          <article class="quiet-card">
+        <h3 data-cms-key="availableHeading" data-reveal>Overview of available agents</h3>
+        <div class="grid-three" data-reveal>
+          <article class="quiet-card" data-stagger>
             <h4 data-cms-key="tutorTitle">Tutor Agents</h4>
             <p data-cms-key="tutorCopy">Structured, subject-specific learning companions. They run scoped drills, track progress, and deliver measurable learning at scale.</p>
             <p class="muted-tight" data-cms-key="tutorNote">Use when teams need repeatable learning, assessments, and reinforcement—not open-ended Q&A.</p>
           </article>
-          <article class="quiet-card">
+          <article class="quiet-card" data-stagger>
             <h4 data-cms-key="interviewTitle">Interview Agents</h4>
             <p data-cms-key="interviewCopy">Conduct structured interviews with constraints, role-specific checklists, and scoring logic to standardize evaluations.</p>
             <p class="muted-tight" data-cms-key="interviewNote">Use when consistency, audit trails, and bias reduction are critical to decisions.</p>
           </article>
-          <article class="quiet-card">
+          <article class="quiet-card" data-stagger>
             <h4 data-cms-key="futureTitle">Future Specialized Agents</h4>
             <p data-cms-key="futureCopy">A growing catalog: onboarding coaches, QA reviewers, operations copilots. Built on the same framework for quick, governable launches.</p>
             <p class="muted-tight" data-cms-key="futureNote">Use when a narrow role needs repeatable decisions with clear guardrails.</p>
@@ -72,17 +72,17 @@
     <section class="section-quiet">
       <div class="container grid-two">
         <div>
-          <h3 data-cms-key="whenHeading">When to use which agent</h3>
+          <h3 data-cms-key="whenHeading" data-reveal>When to use which agent</h3>
           <ul class="list-plain">
             <li data-cms-key="whenTutor">Tutor Agents: when teams need repeatable learning with progress tracking and scoped drills.</li>
             <li data-cms-key="whenInterview">Interview Agents: when decisions depend on consistent questioning, scoring, and auditability.</li>
             <li data-cms-key="whenFuture">Future Specialized Agents: when a focused role is needed for onboarding, QA, or operations support.</li>
           </ul>
         </div>
-        <div>
+        <div data-reveal>
           <div class="quiet-card">
-            <h4 data-cms-key="fitHeading">How they fit</h4>
-            <p data-cms-key="fitCopy">Each agent is defined by a role, a boundary, and an evaluation loop. New roles inherit the same guardrails.</p>
+            <h4 data-cms-key="fitHeading" data-stagger>How they fit</h4>
+            <p data-cms-key="fitCopy" data-stagger>Each agent is defined by a role, a boundary, and an evaluation loop. New roles inherit the same guardrails.</p>
             <div class="divider"></div>
             <div class="mini-diagram">
               <div class="mini-node">
@@ -109,8 +109,8 @@
 
     <section class="section-quiet">
       <div class="container">
-        <h3 data-cms-key="useCasesHeading">Use cases and limits</h3>
-        <div class="matrix">
+        <h3 data-cms-key="useCasesHeading" data-reveal>Use cases and limits</h3>
+        <div class="matrix" data-reveal>
           <div class="matrix-cell">
             <strong>Tutor Agents — good for</strong>
             <p class="muted-tight" data-cms-key="useTutorGood">Skill ramp, onboarding cohorts, policy refreshers.</p>
@@ -135,9 +135,9 @@
 
     <section class="section-quiet">
       <div class="container">
-        <h3 data-cms-key="systemMapsHeading">Agent system maps</h3>
-        <div class="grid-two">
-          <div class="quiet-card">
+        <h3 data-cms-key="systemMapsHeading" data-reveal>Agent system maps</h3>
+        <div class="grid-two" data-reveal>
+          <div class="quiet-card" data-stagger>
             <h4 data-cms-key="tutorTitle">Tutor Agent system</h4>
             <div class="system-map">
               <div class="map-block map-inputs">
@@ -158,7 +158,7 @@
               </div>
             </div>
           </div>
-          <div class="quiet-card">
+          <div class="quiet-card" data-stagger>
             <h4 data-cms-key="interviewTitle">Interview Agent system</h4>
             <div class="system-map">
               <div class="map-block map-inputs">
@@ -221,5 +221,6 @@
   </footer>
   <script src="content-loader.js"></script>
   <script>loadContent("products");</script>
+  <script src="scroll-reveal.js"></script>
 </body>
 </html>

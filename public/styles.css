@@ -98,6 +98,7 @@ img {
   mix-blend-mode: screen;
   opacity: 0.35;
   z-index: 0;
+  animation: drift 18s ease-in-out infinite alternate;
 }
 
 .site-header {
@@ -301,6 +302,18 @@ img {
 .page-hero h1 {
   font-size: clamp(30px, 4vw, 42px);
   line-height: 1.25;
+}
+
+[data-reveal],
+[data-stagger] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .framework-hero {
@@ -507,6 +520,21 @@ img {
 .map-outputs { grid-area: outputs; }
 .map-eval { grid-area: evaluation; }
 .map-center { grid-area: center; border-color: rgba(102, 208, 198, 0.3); }
+
+.line-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(102, 208, 198, 0.1), rgba(102, 208, 198, 0.4), rgba(102, 208, 198, 0.1));
+  margin: 12px 0 6px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.is-visible .line-divider,
+.line-divider.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .timeline {
   display: grid;
@@ -1027,4 +1055,21 @@ img {
   .footer-grid {
     grid-template-columns: 1fr;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-bg,
+  [data-reveal],
+  [data-stagger],
+  .line-divider {
+    animation: none;
+    transition: none;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+@keyframes drift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(0, -12px, 0); }
 }

@@ -25,13 +25,13 @@
   </header>
 
   <main>
-    <section class="page-hero contact-hero">
+    <section class="page-hero contact-hero" data-reveal>
       <div class="container">
-        <p class="eyebrow" data-cms-key="heroEyebrow">Contact</p>
-        <h1 data-cms-key="heroTitle">Move from experimentation to structured, governable AI systems.</h1>
-        <p class="page-lede" data-cms-key="heroLede">Tell us what you need. We'll share a simple plan and a safe starting pilot. This page sets expectations for the first conversation.</p>
+        <p class="eyebrow" data-cms-key="heroEyebrow" data-stagger>Contact</p>
+        <h1 data-cms-key="heroTitle" data-stagger>Move from experimentation to structured, governable AI systems.</h1>
+        <p class="page-lede" data-cms-key="heroLede" data-stagger>Tell us what you need. We'll share a simple plan and a safe starting pilot. This page sets expectations for the first conversation.</p>
         <div class="note-block">
-          <strong>Expect a focused response:</strong> <span data-cms-key="heroNote">we reply with scope, risks, and a proposed pilot call—no marketing scripts.</span>
+          <strong>Expect a focused response:</strong> <span data-cms-key="heroNote" data-stagger>we reply with scope, risks, and a proposed pilot call—no marketing scripts.</span>
         </div>
       </div>
     </section>
@@ -39,22 +39,22 @@
     <section class="section-quiet">
       <div class="container grid-two">
         <div>
-          <h3 data-cms-key="reachHeading">How to reach us</h3>
-          <p data-cms-key="reachCopy">Email is the fastest way to start. Share the problem, the intended agent role, and any constraints you already have.</p>
+          <h3 data-cms-key="reachHeading" data-reveal>How to reach us</h3>
+          <p data-cms-key="reachCopy" data-stagger>Email is the fastest way to start. Share the problem, the intended agent role, and any constraints you already have.</p>
           <div class="divider"></div>
-          <p class="muted-tight" data-cms-key="reachNote">We respond with a short plan: scope, risks, and a suggested pilot.</p>
-          <h4 data-cms-key="nextHeading">What happens next</h4>
-          <ul class="list-plain">
-            <li data-cms-key="next1">We review your note within one business day.</li>
-            <li data-cms-key="next2">We propose a brief call with a draft scope and risk map.</li>
-            <li data-cms-key="next3">If there’s a fit, we outline a pilot and governance checkpoints.</li>
+          <p class="muted-tight" data-cms-key="reachNote" data-stagger>We respond with a short plan: scope, risks, and a suggested pilot.</p>
+          <h4 data-cms-key="nextHeading" data-stagger>What happens next</h4>
+          <ul class="list-plain" data-reveal>
+            <li data-cms-key="next1" data-stagger>We review your note within one business day.</li>
+            <li data-cms-key="next2" data-stagger>We propose a brief call with a draft scope and risk map.</li>
+            <li data-cms-key="next3" data-stagger>If there’s a fit, we outline a pilot and governance checkpoints.</li>
           </ul>
-          <p class="muted-tight" data-cms-key="nextOutro">No marketing spam, no endless forms—just a clear next step.</p>
+          <p class="muted-tight" data-cms-key="nextOutro" data-stagger>No marketing spam, no endless forms—just a clear next step.</p>
         </div>
-        <div>
+        <div data-reveal>
           <div class="quiet-card">
-            <h4 data-cms-key="formTitle">Contact form</h4>
-            <form class="form-stack">
+            <h4 data-cms-key="formTitle" data-stagger>Contact form</h4>
+            <form class="form-stack" data-stagger>
               <label>
                 <span data-cms-key="formLabelName">Name</span>
                 <input type="text" name="name" placeholder="Your name">
@@ -115,5 +115,6 @@
   </footer>
   <script src="content-loader.js"></script>
   <script>loadContent("contact");</script>
+  <script src="scroll-reveal.js"></script>
 </body>
 </html>

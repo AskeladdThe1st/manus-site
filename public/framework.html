@@ -25,11 +25,11 @@
   </header>
 
   <main>
-    <section class="page-hero framework-hero">
+    <section class="page-hero framework-hero" data-reveal>
       <div class="container">
-        <p class="eyebrow" data-cms-key="heroEyebrow">Framework</p>
-        <h1 data-cms-key="heroTitle">A manifesto for specialized, governable agents.</h1>
-        <p class="page-lede" data-cms-key="heroLede">
+        <p class="eyebrow" data-cms-key="heroEyebrow" data-stagger>Framework</p>
+        <h1 data-cms-key="heroTitle" data-stagger>A manifesto for specialized, governable agents.</h1>
+        <p class="page-lede" data-cms-key="heroLede" data-stagger>
           Break work into explicit roles, constrain behavior, measure outcomes, and steward change deliberately.
           This is the operating logic behind every Archon deployment.
         </p>
@@ -38,44 +38,44 @@
 
     <section class="section-quiet">
       <div class="container grid-two">
-        <div>
-          <h3 data-cms-key="philosophyHeading">Philosophy of specialization</h3>
-          <p data-cms-key="philosophyCopy">Intelligence scales better when responsibility is narrow. Clear roles, defined constraints, and measurable outcomes keep systems predictable.</p>
-          <p class="muted-tight" data-cms-key="philosophyNote">We resist “one model to rule them all.” Instead, we compose small, auditable roles.</p>
+        <div data-reveal>
+          <h3 data-cms-key="philosophyHeading" data-stagger>Philosophy of specialization</h3>
+          <p data-cms-key="philosophyCopy" data-stagger>Intelligence scales better when responsibility is narrow. Clear roles, defined constraints, and measurable outcomes keep systems predictable.</p>
+          <p class="muted-tight" data-cms-key="philosophyNote" data-stagger>We resist “one model to rule them all.” Instead, we compose small, auditable roles.</p>
         </div>
-        <div>
-          <h3 data-cms-key="rolesHeading">Agent roles and boundaries</h3>
-          <p data-cms-key="rolesCopy">Each agent owns a role, a boundary, and a handoff. Boundaries prevent scope creep; handoffs keep multi-agent systems legible.</p>
-          <p class="muted-tight" data-cms-key="rolesNote">Ownership is codified: inputs accepted, outputs produced, and what to escalate.</p>
+        <div data-reveal>
+          <h3 data-cms-key="rolesHeading" data-stagger>Agent roles and boundaries</h3>
+          <p data-cms-key="rolesCopy" data-stagger>Each agent owns a role, a boundary, and a handoff. Boundaries prevent scope creep; handoffs keep multi-agent systems legible.</p>
+          <p class="muted-tight" data-cms-key="rolesNote" data-stagger>Ownership is codified: inputs accepted, outputs produced, and what to escalate.</p>
         </div>
       </div>
     </section>
 
     <section class="section-quiet">
       <div class="container">
-        <h3 data-cms-key="lifecycleHeading">Lifecycle: how we design and govern agents</h3>
-        <div class="flowchart">
-          <div class="flow-step">
+        <h3 data-cms-key="lifecycleHeading" data-reveal>Lifecycle: how we design and govern agents</h3>
+        <div class="flowchart" data-reveal>
+          <div class="flow-step" data-stagger>
             <strong data-cms-key="life1Title">Discover</strong>
             <small data-cms-key="life1Copy">Map the work, risks, and where an agent should own responsibility.</small>
           </div>
-          <div class="flow-step">
+          <div class="flow-step" data-stagger>
             <strong data-cms-key="life2Title">Define role</strong>
             <small data-cms-key="life2Copy">Inputs, outputs, boundaries, and escalation are codified.</small>
           </div>
-          <div class="flow-step">
+          <div class="flow-step" data-stagger>
             <strong data-cms-key="life3Title">Pilot</strong>
             <small data-cms-key="life3Copy">Constrain the surface area, measure outcomes, and validate guardrails.</small>
           </div>
-          <div class="flow-step">
+          <div class="flow-step" data-stagger>
             <strong data-cms-key="life4Title">Integrate</strong>
             <small data-cms-key="life4Copy">Connect to data and tools with logging, alerts, and audit trails.</small>
           </div>
-          <div class="flow-step">
+          <div class="flow-step" data-stagger>
             <strong data-cms-key="life5Title">Govern</strong>
             <small data-cms-key="life5Copy">Run evaluations, regression suites, and human-in-the-loop checks.</small>
           </div>
-          <div class="flow-step">
+          <div class="flow-step" data-stagger>
             <strong data-cms-key="life6Title">Steward</strong>
             <small data-cms-key="life6Copy">Track drift, version changes, and retire or expand roles deliberately.</small>
           </div>
@@ -85,29 +85,29 @@
 
     <section class="section-quiet">
       <div class="container">
-        <h3 data-cms-key="componentsHeading">Framework components</h3>
-        <div class="grid-three">
-          <article class="quiet-card">
+        <h3 data-cms-key="componentsHeading" data-reveal>Framework components</h3>
+        <div class="grid-three" data-reveal>
+          <article class="quiet-card" data-stagger>
             <h4 data-cms-key="component1Title">Role definition</h4>
             <p data-cms-key="component1Copy">Responsibilities, inputs, outputs, and exclusions are explicit before an agent is deployed.</p>
           </article>
-          <article class="quiet-card">
+          <article class="quiet-card" data-stagger>
             <h4 data-cms-key="component2Title">Guardrails</h4>
             <p data-cms-key="component2Copy">Constraints, escalation paths, and stop conditions so agents remain safe in production.</p>
           </article>
-          <article class="quiet-card">
+          <article class="quiet-card" data-stagger>
             <h4 data-cms-key="component3Title">Evaluation</h4>
             <p data-cms-key="component3Copy">Metrics, checklists, and scoring logic to verify the agent is delivering the intended outcome.</p>
           </article>
-          <article class="quiet-card">
+          <article class="quiet-card" data-stagger>
             <h4 data-cms-key="component4Title">Integration</h4>
             <p data-cms-key="component4Copy">Data access, tools, and system touchpoints mapped with observability for audits.</p>
           </article>
-          <article class="quiet-card">
+          <article class="quiet-card" data-stagger>
             <h4 data-cms-key="component5Title">Scaling path</h4>
             <p data-cms-key="component5Copy">Pilots with small surfaces, followed by structured expansion once reliability is demonstrated.</p>
           </article>
-          <article class="quiet-card">
+          <article class="quiet-card" data-stagger>
             <h4 data-cms-key="component6Title">Change control</h4>
             <p data-cms-key="component6Copy">Versioned prompts, regression suites, and rollback steps so updates are deliberate.</p>
           </article>
@@ -117,12 +117,12 @@
 
     <section class="section-quiet">
       <div class="container">
-        <h3 data-cms-key="governanceHeading">Governance and evaluation</h3>
+        <h3 data-cms-key="governanceHeading" data-reveal>Governance and evaluation</h3>
         <div class="grid-two">
-          <div>
-            <p data-cms-key="governanceCopy">Make systems transparent and governable. Reduce risk when deploying AI into real workflows by keeping audit trails and clear ownership.</p>
+          <div data-reveal>
+            <p data-cms-key="governanceCopy" data-stagger>Make systems transparent and governable. Reduce risk when deploying AI into real workflows by keeping audit trails and clear ownership.</p>
             <div class="divider"></div>
-            <p class="muted-tight" data-cms-key="governanceNote">Compliance teams know what was decided, by which agent, and under which constraints.</p>
+            <p class="muted-tight" data-cms-key="governanceNote" data-stagger>Compliance teams know what was decided, by which agent, and under which constraints.</p>
             <dl class="dl-grid">
               <dt>Audit</dt>
               <dd data-cms-key="governAudit">Structured logs of prompts, tool calls, and outcomes.</dd>
@@ -132,7 +132,7 @@
               <dd data-cms-key="governEscalate">Defined human-in-the-loop triggers and failover paths.</dd>
             </dl>
           </div>
-          <div class="quiet-card">
+          <div class="quiet-card" data-reveal>
             <h4 data-cms-key="roleLifecycleTitle">Role lifecycle</h4>
             <div class="mini-diagram">
               <div class="mini-node">
@@ -195,5 +195,6 @@
   </footer>
   <script src="content-loader.js"></script>
   <script>loadContent("framework");</script>
+  <script src="scroll-reveal.js"></script>
 </body>
 </html>
