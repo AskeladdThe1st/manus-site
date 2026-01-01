@@ -16,7 +16,11 @@
   <header class="site-header">
     <div class="container nav-bar">
       <a class="brand" href="index.html">Archon</a>
-      <nav class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="primary-nav">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="framework.html">Framework</a>
@@ -197,6 +201,7 @@
   </footer>
   <script src="content-loader.js" defer></script>
   <script defer>loadContent("framework");</script>
+  <script src="nav-menu.js" defer></script>
   <script src="nav-underline.js" defer></script>
   <script src="scroll-reveal.js" defer></script>
 </body>
