@@ -31,7 +31,7 @@
         <h1>How Archon thinks about specialized agents.</h1>
         <p class="page-lede">
           Break large problems into smaller agent roles with clear responsibilities and constraints.
-          Make systems transparent and governable while scaling intentionally.
+          Make systems transparent and governable while scaling intentionally. This page is the operating manual behind the marketing.
         </p>
       </div>
     </section>
@@ -41,10 +41,12 @@
         <div>
           <h3>Philosophy of specialization</h3>
           <p>Intelligence scales better when responsibility is narrow. Clear roles, defined constraints, and measurable outcomes keep systems predictable.</p>
+          <p class="muted-tight">We resist “one model to rule them all.” Instead, we compose small, auditable roles.</p>
         </div>
         <div>
           <h3>Agent roles and boundaries</h3>
           <p>Each agent owns a role, a boundary, and a handoff. Boundaries prevent scope creep; handoffs keep multi-agent systems legible.</p>
+          <p class="muted-tight">Ownership is codified: inputs accepted, outputs produced, and what to escalate.</p>
         </div>
       </div>
     </section>
@@ -73,6 +75,10 @@
             <h4>Scaling path</h4>
             <p>Pilots with small surfaces, followed by structured expansion once reliability is demonstrated.</p>
           </article>
+          <article class="quiet-card">
+            <h4>Change control</h4>
+            <p>Versioned prompts, regression suites, and rollback steps so updates are deliberate.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -85,9 +91,17 @@
             <p>Make systems transparent and governable. Reduce risk when deploying AI into real workflows by keeping audit trails and clear ownership.</p>
             <div class="divider"></div>
             <p class="muted-tight">Compliance teams know what was decided, by which agent, and under which constraints.</p>
+            <dl class="dl-grid">
+              <dt>Audit</dt>
+              <dd>Structured logs of prompts, tool calls, and outcomes.</dd>
+              <dt>Evaluate</dt>
+              <dd>Checklists for correctness, safety, and adherence to role boundaries.</dd>
+              <dt>Escalate</dt>
+              <dd>Defined human-in-the-loop triggers and failover paths.</dd>
+            </dl>
           </div>
           <div class="quiet-card">
-            <h4>Minimal diagram</h4>
+            <h4>Role lifecycle</h4>
             <div class="mini-diagram">
               <div class="mini-node">
                 <strong>Specialize</strong>
@@ -100,6 +114,10 @@
               <div class="mini-node">
                 <strong>Scale</strong>
                 <small>Integrations + guardrails</small>
+              </div>
+              <div class="mini-node">
+                <strong>Steward</strong>
+                <small>Audits, tuning, change control</small>
               </div>
             </div>
           </div>
