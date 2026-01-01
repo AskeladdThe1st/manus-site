@@ -67,6 +67,10 @@ img {
   margin: 0 auto;
 }
 
+.section {
+  padding: 80px 0;
+}
+
 .muted-tight {
   color: var(--muted);
   margin: 0;
@@ -179,7 +183,7 @@ img {
 
 .lede {
   max-width: 640px;
-  font-size: 17px;
+  font-size: clamp(15px, 2vw, 17px);
 }
 
 .cta-row {
@@ -305,6 +309,20 @@ img {
   font-weight: 700;
   font-size: 15px;
 }
+.icon-badge svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--accent);
+}
+
+.card p,
+.intro-card p,
+.frameworks li,
+.cta-form label,
+.foot-note {
+  font-size: 15px;
+  line-height: 1.7;
+}
 
 .why {
   padding: 80px 0;
@@ -331,6 +349,9 @@ img {
 .section-head {
   text-align: center;
   margin-bottom: 48px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-grid {
@@ -565,13 +586,22 @@ img {
   gap: 12px;
 }
 
+/* RESPONSIVE */
 @media (max-width: 900px) {
+  .hero {
+    padding: 100px 0 80px;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
   }
 
+  .hero-text {
+    order: 1;
+  }
+
   .hero-visual {
-    order: -1;
+    order: 2;
   }
 
   .cta-inner {
@@ -580,6 +610,11 @@ img {
 
   .cta-buttons {
     justify-content: flex-start;
+  }
+
+  body {
+    font-size: 15px;
+    line-height: 1.65;
   }
 }
 
@@ -593,14 +628,79 @@ img {
     align-items: flex-start;
   }
 
+  .section-head {
+    padding: 0 6px;
+  }
+
+  .card,
+  .intro-card,
+  .frameworks li {
+    padding: 18px;
+  }
+
+  .frameworks li {
+    line-height: 1.7;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 560px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
   .nav-links {
-    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .nav-links a {
+    padding: 10px 12px;
+    border-radius: 10px;
+  }
+
+  .hero {
+    padding: 80px 0 70px;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(28px, 8vw, 38px);
+  }
+
+  .hero-visual .panel {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .card,
+  .intro-card,
+  .frameworks li,
+  .cta-inner {
+    border-radius: 12px;
+  }
+
+  .cta-inner {
+    padding: 22px 20px;
+  }
+
+  .cta-buttons {
+    width: 100%;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pillars {
+    gap: 12px;
   }
 
   .footer-grid {
