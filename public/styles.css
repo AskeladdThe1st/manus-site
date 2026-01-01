@@ -303,6 +303,54 @@ img {
   line-height: 1.25;
 }
 
+.framework-hero {
+  background: linear-gradient(120deg, rgba(102, 208, 198, 0.12), rgba(12, 18, 28, 0.9));
+  border-bottom: 1px solid rgba(102, 208, 198, 0.18);
+}
+
+.framework-hero h1 {
+  font-size: clamp(34px, 5vw, 48px);
+  line-height: 1.2;
+}
+
+.services-hero {
+  background: #0f151e;
+  border-bottom: 1px solid var(--border);
+}
+
+.services-hero .container {
+  display: grid;
+  gap: 12px;
+  max-width: 980px;
+}
+
+.products-hero {
+  background: #0e141b;
+  border-bottom: 1px solid var(--border);
+}
+
+.products-hero .container {
+  display: grid;
+  gap: 10px;
+  max-width: 960px;
+}
+
+.about-hero {
+  background: #101722;
+  border-bottom: 1px solid var(--border);
+}
+
+.about-hero .container {
+  display: grid;
+  gap: 10px;
+  max-width: 900px;
+}
+
+.contact-hero {
+  background: #0f151e;
+  border-bottom: 1px solid var(--border);
+}
+
 .page-lede {
   font-size: 17px;
   max-width: 720px;
@@ -384,6 +432,81 @@ img {
 .mini-node small {
   color: var(--muted);
 }
+
+.flowchart {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.flow-step {
+  position: relative;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(10, 15, 22, 0.9);
+  min-width: 180px;
+  flex: 1 1 200px;
+}
+
+.flow-step strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.flow-step::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  width: 12px;
+  height: 1px;
+  background: rgba(102, 208, 198, 0.5);
+  transform: translateY(-50%);
+}
+
+.flow-step:last-child::after {
+  display: none;
+}
+
+.flow-step small {
+  color: var(--muted);
+}
+
+.system-map {
+  display: grid;
+  grid-template-areas:
+    "inputs center outputs"
+    "evaluation center outputs";
+  gap: 14px;
+  align-items: stretch;
+}
+
+.map-block,
+.map-center {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  background: rgba(10, 15, 22, 0.9);
+  box-shadow: var(--shadow);
+}
+
+.map-block h4,
+.map-center h4 {
+  margin-bottom: 6px;
+}
+
+.map-block small,
+.map-center small {
+  color: var(--muted);
+}
+
+.map-inputs { grid-area: inputs; }
+.map-outputs { grid-area: outputs; }
+.map-eval { grid-area: evaluation; }
+.map-center { grid-area: center; border-color: rgba(102, 208, 198, 0.3); }
 
 .timeline {
   display: grid;
@@ -834,6 +957,14 @@ img {
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .system-map {
+    grid-template-areas:
+      "center"
+      "inputs"
+      "outputs"
+      "evaluation";
   }
 }
 

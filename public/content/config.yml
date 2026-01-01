@@ -1,0 +1,268 @@
+backend:
+  name: github
+  repo: AskeladdThe1st/manus-site
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "home"
+    label: "Homepage"
+    delete: false
+    files:
+      - label: "Home Content"
+        name: "home-content"
+        file: "public/content/home.json"
+        format: "json"
+        fields:
+          - { label: "Hero Eyebrow", name: "heroEyebrow", widget: "string" }
+          - { label: "Hero Title", name: "heroTitle", widget: "text" }
+          - { label: "Hero Lede", name: "heroLede", widget: "text" }
+          - { label: "Primary CTA", name: "heroPrimaryCta", widget: "string" }
+          - { label: "Secondary CTA", name: "heroSecondaryCta", widget: "string" }
+          - { label: "Pillar 1 Title", name: "pillar1Title", widget: "string" }
+          - { label: "Pillar 1 Copy", name: "pillar1Copy", widget: "text" }
+          - { label: "Pillar 2 Title", name: "pillar2Title", widget: "string" }
+          - { label: "Pillar 2 Copy", name: "pillar2Copy", widget: "text" }
+          - { label: "Pillar 3 Title", name: "pillar3Title", widget: "string" }
+          - { label: "Pillar 3 Copy", name: "pillar3Copy", widget: "text" }
+          - { label: "Intro 1 Title", name: "intro1Title", widget: "string" }
+          - { label: "Intro 1 Copy", name: "intro1Copy", widget: "text" }
+          - { label: "Intro 2 Title", name: "intro2Title", widget: "string" }
+          - { label: "Intro 2 Copy", name: "intro2Copy", widget: "text" }
+          - { label: "Intro 3 Title", name: "intro3Title", widget: "string" }
+          - { label: "Intro 3 Copy", name: "intro3Copy", widget: "text" }
+          - { label: "Why Heading", name: "whyHeading", widget: "string" }
+          - { label: "Why Paragraph 1", name: "whyPara1", widget: "text" }
+          - { label: "Why Paragraph 2", name: "whyPara2", widget: "text" }
+          - { label: "Products Heading", name: "productsHeading", widget: "string" }
+          - { label: "Products Subhead", name: "productsSubhead", widget: "text" }
+          - { label: "Product 1 Title", name: "product1Title", widget: "string" }
+          - { label: "Product 1 Copy", name: "product1Copy", widget: "text" }
+          - { label: "Product 1 CTA", name: "product1Cta", widget: "string" }
+          - { label: "Product 2 Title", name: "product2Title", widget: "string" }
+          - { label: "Product 2 Copy", name: "product2Copy", widget: "text" }
+          - { label: "Product 2 CTA", name: "product2Cta", widget: "string" }
+          - { label: "Product 3 Title", name: "product3Title", widget: "string" }
+          - { label: "Product 3 Copy", name: "product3Copy", widget: "text" }
+          - { label: "Product 3 CTA", name: "product3Cta", widget: "string" }
+          - { label: "Framework Heading", name: "frameworkHeading", widget: "string" }
+          - { label: "Framework Item 1 Label", name: "frameworkItem1Label", widget: "string" }
+          - { label: "Framework Item 1 Copy", name: "frameworkItem1Copy", widget: "text" }
+          - { label: "Framework Item 2 Label", name: "frameworkItem2Label", widget: "string" }
+          - { label: "Framework Item 2 Copy", name: "frameworkItem2Copy", widget: "text" }
+          - { label: "Framework Item 3 Label", name: "frameworkItem3Label", widget: "string" }
+          - { label: "Framework Item 3 Copy", name: "frameworkItem3Copy", widget: "text" }
+          - { label: "Framework Who Title", name: "frameworkWhoTitle", widget: "string" }
+          - { label: "Framework Who Copy", name: "frameworkWhoCopy", widget: "text" }
+          - { label: "Framework How Title", name: "frameworkHowTitle", widget: "string" }
+          - { label: "Framework How Copy", name: "frameworkHowCopy", widget: "text" }
+          - { label: "Framework Diagram Hint", name: "frameworkDiagramHint", widget: "text" }
+          - { label: "Services Heading", name: "servicesHeading", widget: "string" }
+          - { label: "Services Subhead", name: "servicesSubhead", widget: "text" }
+          - { label: "Service 1 Title", name: "service1Title", widget: "string" }
+          - { label: "Service 1 Copy", name: "service1Copy", widget: "text" }
+          - { label: "Service 1 CTA", name: "service1Cta", widget: "string" }
+          - { label: "Service 2 Title", name: "service2Title", widget: "string" }
+          - { label: "Service 2 Copy", name: "service2Copy", widget: "text" }
+          - { label: "Service 2 CTA", name: "service2Cta", widget: "string" }
+          - { label: "Service 3 Title", name: "service3Title", widget: "string" }
+          - { label: "Service 3 Copy", name: "service3Copy", widget: "text" }
+          - { label: "Service 3 CTA", name: "service3Cta", widget: "string" }
+          - { label: "CTA Eyebrow", name: "ctaEyebrow", widget: "string" }
+          - { label: "CTA Heading", name: "ctaHeading", widget: "text" }
+          - { label: "CTA Body", name: "ctaBody", widget: "text" }
+          - { label: "CTA Button", name: "ctaButton", widget: "string" }
+          - { label: "CTA Email", name: "ctaEmail", widget: "string" }
+          - { label: "Form Label Name", name: "ctaFormLabelName", widget: "string" }
+          - { label: "Form Label Email", name: "ctaFormLabelEmail", widget: "string" }
+          - { label: "Form Label Project", name: "ctaFormLabelProject", widget: "string" }
+
+  - name: "services"
+    label: "Services Page"
+    delete: false
+    files:
+      - label: "Services Content"
+        name: "services-content"
+        file: "public/content/services.json"
+        format: "json"
+        fields:
+          - { label: "Hero Eyebrow", name: "heroEyebrow", widget: "string" }
+          - { label: "Hero Title", name: "heroTitle", widget: "text" }
+          - { label: "Hero Lede", name: "heroLede", widget: "text" }
+          - { label: "Hero Note", name: "heroNote", widget: "text" }
+          - { label: "What Heading", name: "whatHeading", widget: "string" }
+          - { label: "What: Custom Agent Design", name: "whatDesign", widget: "text" }
+          - { label: "What: Integration & Scaling", name: "whatIntegrate", widget: "text" }
+          - { label: "What: Advisory & Implementation", name: "whatAdvisory", widget: "text" }
+          - { label: "Engage Heading", name: "engageHeading", widget: "string" }
+          - { label: "Engage Item 1", name: "engageItem1", widget: "text" }
+          - { label: "Engage Item 2", name: "engageItem2", widget: "text" }
+          - { label: "Engage Item 3", name: "engageItem3", widget: "text" }
+          - { label: "Engage Item 4", name: "engageItem4", widget: "text" }
+          - { label: "Cadence Title", name: "cadenceTitle", widget: "string" }
+          - { label: "Cadence Copy", name: "cadenceCopy", widget: "text" }
+          - { label: "Cadence Note", name: "cadenceNote", widget: "text" }
+          - { label: "Where Heading", name: "whereHeading", widget: "string" }
+          - { label: "Where Strategy", name: "whereStrategy", widget: "text" }
+          - { label: "Where Design", name: "whereDesign", widget: "text" }
+          - { label: "Where Implementation", name: "whereImplementation", widget: "text" }
+          - { label: "Where Operations", name: "whereOperations", widget: "text" }
+          - { label: "Flow Heading", name: "flowHeading", widget: "string" }
+          - { label: "Flow Step 1 Title", name: "flowStep1Title", widget: "string" }
+          - { label: "Flow Step 1 Copy", name: "flowStep1Copy", widget: "text" }
+          - { label: "Flow Step 2 Title", name: "flowStep2Title", widget: "string" }
+          - { label: "Flow Step 2 Copy", name: "flowStep2Copy", widget: "text" }
+          - { label: "Flow Step 3 Title", name: "flowStep3Title", widget: "string" }
+          - { label: "Flow Step 3 Copy", name: "flowStep3Copy", widget: "text" }
+          - { label: "Flow Step 4 Title", name: "flowStep4Title", widget: "string" }
+          - { label: "Flow Step 4 Copy", name: "flowStep4Copy", widget: "text" }
+          - { label: "Flow Step 5 Title", name: "flowStep5Title", widget: "string" }
+          - { label: "Flow Step 5 Copy", name: "flowStep5Copy", widget: "text" }
+          - { label: "Timeline Heading", name: "timelineHeading", widget: "string" }
+          - { label: "Timeline 1 Title", name: "timeline1Title", widget: "string" }
+          - { label: "Timeline 1 Copy", name: "timeline1Copy", widget: "text" }
+          - { label: "Timeline 2 Title", name: "timeline2Title", widget: "string" }
+          - { label: "Timeline 2 Copy", name: "timeline2Copy", widget: "text" }
+          - { label: "Timeline 3 Title", name: "timeline3Title", widget: "string" }
+          - { label: "Timeline 3 Copy", name: "timeline3Copy", widget: "text" }
+          - { label: "Timeline 4 Title", name: "timeline4Title", widget: "string" }
+          - { label: "Timeline 4 Copy", name: "timeline4Copy", widget: "text" }
+
+  - name: "framework"
+    label: "Framework Page"
+    delete: false
+    files:
+      - label: "Framework Content"
+        name: "framework-content"
+        file: "public/content/framework.json"
+        format: "json"
+        fields:
+          - { label: "Hero Eyebrow", name: "heroEyebrow", widget: "string" }
+          - { label: "Hero Title", name: "heroTitle", widget: "text" }
+          - { label: "Hero Lede", name: "heroLede", widget: "text" }
+          - { label: "Philosophy Heading", name: "philosophyHeading", widget: "string" }
+          - { label: "Philosophy Copy", name: "philosophyCopy", widget: "text" }
+          - { label: "Philosophy Note", name: "philosophyNote", widget: "text" }
+          - { label: "Roles Heading", name: "rolesHeading", widget: "string" }
+          - { label: "Roles Copy", name: "rolesCopy", widget: "text" }
+          - { label: "Roles Note", name: "rolesNote", widget: "text" }
+          - { label: "Lifecycle Heading", name: "lifecycleHeading", widget: "string" }
+          - { label: "Lifecycle Step 1 Title", name: "life1Title", widget: "string" }
+          - { label: "Lifecycle Step 1 Copy", name: "life1Copy", widget: "text" }
+          - { label: "Lifecycle Step 2 Title", name: "life2Title", widget: "string" }
+          - { label: "Lifecycle Step 2 Copy", name: "life2Copy", widget: "text" }
+          - { label: "Lifecycle Step 3 Title", name: "life3Title", widget: "string" }
+          - { label: "Lifecycle Step 3 Copy", name: "life3Copy", widget: "text" }
+          - { label: "Lifecycle Step 4 Title", name: "life4Title", widget: "string" }
+          - { label: "Lifecycle Step 4 Copy", name: "life4Copy", widget: "text" }
+          - { label: "Lifecycle Step 5 Title", name: "life5Title", widget: "string" }
+          - { label: "Lifecycle Step 5 Copy", name: "life5Copy", widget: "text" }
+          - { label: "Lifecycle Step 6 Title", name: "life6Title", widget: "string" }
+          - { label: "Lifecycle Step 6 Copy", name: "life6Copy", widget: "text" }
+          - { label: "Components Heading", name: "componentsHeading", widget: "string" }
+          - { label: "Component 1 Title", name: "component1Title", widget: "string" }
+          - { label: "Component 1 Copy", name: "component1Copy", widget: "text" }
+          - { label: "Component 2 Title", name: "component2Title", widget: "string" }
+          - { label: "Component 2 Copy", name: "component2Copy", widget: "text" }
+          - { label: "Component 3 Title", name: "component3Title", widget: "string" }
+          - { label: "Component 3 Copy", name: "component3Copy", widget: "text" }
+          - { label: "Component 4 Title", name: "component4Title", widget: "string" }
+          - { label: "Component 4 Copy", name: "component4Copy", widget: "text" }
+          - { label: "Component 5 Title", name: "component5Title", widget: "string" }
+          - { label: "Component 5 Copy", name: "component5Copy", widget: "text" }
+          - { label: "Component 6 Title", name: "component6Title", widget: "string" }
+          - { label: "Component 6 Copy", name: "component6Copy", widget: "text" }
+          - { label: "Governance Heading", name: "governanceHeading", widget: "string" }
+          - { label: "Governance Copy", name: "governanceCopy", widget: "text" }
+          - { label: "Governance Note", name: "governanceNote", widget: "text" }
+          - { label: "Govern Audit", name: "governAudit", widget: "text" }
+          - { label: "Govern Evaluate", name: "governEvaluate", widget: "text" }
+          - { label: "Govern Escalate", name: "governEscalate", widget: "text" }
+          - { label: "Role Lifecycle Title", name: "roleLifecycleTitle", widget: "string" }
+          - { label: "Role Specialize", name: "roleSpecialize", widget: "text" }
+          - { label: "Role Pilot", name: "rolePilot", widget: "text" }
+          - { label: "Role Scale", name: "roleScale", widget: "text" }
+          - { label: "Role Steward", name: "roleSteward", widget: "text" }
+
+  - name: "products"
+    label: "Products Page"
+    delete: false
+    files:
+      - label: "Products Content"
+        name: "products-content"
+        file: "public/content/products.json"
+        format: "json"
+        fields:
+          - { label: "Hero Eyebrow", name: "heroEyebrow", widget: "string" }
+          - { label: "Hero Title", name: "heroTitle", widget: "text" }
+          - { label: "Hero Lede", name: "heroLede", widget: "text" }
+          - { label: "Overview Title", name: "overviewTitle", widget: "string" }
+          - { label: "Overview Copy", name: "overviewCopy", widget: "text" }
+          - { label: "Excel Title", name: "excelTitle", widget: "string" }
+          - { label: "Excel Copy", name: "excelCopy", widget: "text" }
+          - { label: "Available Heading", name: "availableHeading", widget: "string" }
+          - { label: "Tutor Title", name: "tutorTitle", widget: "string" }
+          - { label: "Tutor Copy", name: "tutorCopy", widget: "text" }
+          - { label: "Tutor Note", name: "tutorNote", widget: "text" }
+          - { label: "Interview Title", name: "interviewTitle", widget: "string" }
+          - { label: "Interview Copy", name: "interviewCopy", widget: "text" }
+          - { label: "Interview Note", name: "interviewNote", widget: "text" }
+          - { label: "Future Title", name: "futureTitle", widget: "string" }
+          - { label: "Future Copy", name: "futureCopy", widget: "text" }
+          - { label: "Future Note", name: "futureNote", widget: "text" }
+          - { label: "When Heading", name: "whenHeading", widget: "string" }
+          - { label: "When Tutor", name: "whenTutor", widget: "text" }
+          - { label: "When Interview", name: "whenInterview", widget: "text" }
+          - { label: "When Future", name: "whenFuture", widget: "text" }
+          - { label: "Fit Heading", name: "fitHeading", widget: "string" }
+          - { label: "Fit Copy", name: "fitCopy", widget: "text" }
+          - { label: "Fit Role", name: "fitRole", widget: "text" }
+          - { label: "Fit Boundary", name: "fitBoundary", widget: "text" }
+          - { label: "Fit Evaluation", name: "fitEvaluation", widget: "text" }
+          - { label: "Fit Escalation", name: "fitEscalation", widget: "text" }
+          - { label: "Use Cases Heading", name: "useCasesHeading", widget: "string" }
+          - { label: "Use Tutor Good", name: "useTutorGood", widget: "text" }
+          - { label: "Use Tutor Limit", name: "useTutorLimit", widget: "text" }
+          - { label: "Use Interview Good", name: "useInterviewGood", widget: "text" }
+          - { label: "Use Interview Limit", name: "useInterviewLimit", widget: "text" }
+          - { label: "Use Future Good", name: "useFutureGood", widget: "text" }
+          - { label: "Use Future Limit", name: "useFutureLimit", widget: "text" }
+          - { label: "System Maps Heading", name: "systemMapsHeading", widget: "string" }
+          - { label: "Tutor Inputs", name: "tutorInputs", widget: "text" }
+          - { label: "Tutor Role", name: "tutorRole", widget: "text" }
+          - { label: "Tutor Outputs", name: "tutorOutputs", widget: "text" }
+          - { label: "Tutor Evaluation", name: "tutorEvaluation", widget: "text" }
+          - { label: "Interview Inputs", name: "interviewInputs", widget: "text" }
+          - { label: "Interview Role", name: "interviewRole", widget: "text" }
+          - { label: "Interview Outputs", name: "interviewOutputs", widget: "text" }
+          - { label: "Interview Evaluation", name: "interviewEvaluation", widget: "text" }
+
+  - name: "contact"
+    label: "Contact Page"
+    delete: false
+    files:
+      - label: "Contact Content"
+        name: "contact-content"
+        file: "public/content/contact.json"
+        format: "json"
+        fields:
+          - { label: "Hero Eyebrow", name: "heroEyebrow", widget: "string" }
+          - { label: "Hero Title", name: "heroTitle", widget: "text" }
+          - { label: "Hero Lede", name: "heroLede", widget: "text" }
+          - { label: "Hero Note", name: "heroNote", widget: "text" }
+          - { label: "Reach Heading", name: "reachHeading", widget: "string" }
+          - { label: "Reach Copy", name: "reachCopy", widget: "text" }
+          - { label: "Reach Note", name: "reachNote", widget: "text" }
+          - { label: "Next Heading", name: "nextHeading", widget: "string" }
+          - { label: "Next 1", name: "next1", widget: "text" }
+          - { label: "Next 2", name: "next2", widget: "text" }
+          - { label: "Next 3", name: "next3", widget: "text" }
+          - { label: "Next Outro", name: "nextOutro", widget: "text" }
+          - { label: "Form Title", name: "formTitle", widget: "string" }
+          - { label: "Form Label Name", name: "formLabelName", widget: "string" }
+          - { label: "Form Label Email", name: "formLabelEmail", widget: "string" }
+          - { label: "Form Label Project", name: "formLabelProject", widget: "string" }
+          - { label: "Form Button", name: "formButton", widget: "string" }
+          - { label: "Form Email CTA", name: "formEmail", widget: "string" }

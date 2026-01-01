@@ -25,48 +25,51 @@
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="page-hero contact-hero">
       <div class="container">
-        <p class="eyebrow">Contact</p>
-        <h1>Move from experimentation to structured, governable AI systems.</h1>
-        <p class="page-lede">Tell us what you need. We'll share a simple plan and a safe starting pilot. This page sets expectations for the first conversation.</p>
+        <p class="eyebrow" data-cms-key="heroEyebrow">Contact</p>
+        <h1 data-cms-key="heroTitle">Move from experimentation to structured, governable AI systems.</h1>
+        <p class="page-lede" data-cms-key="heroLede">Tell us what you need. We'll share a simple plan and a safe starting pilot. This page sets expectations for the first conversation.</p>
+        <div class="note-block">
+          <strong>Expect a focused response:</strong> <span data-cms-key="heroNote">we reply with scope, risks, and a proposed pilot call—no marketing scripts.</span>
+        </div>
       </div>
     </section>
 
     <section class="section-quiet">
       <div class="container grid-two">
         <div>
-          <h3>How to reach us</h3>
-          <p>Email is the fastest way to start. Share the problem, the intended agent role, and any constraints you already have.</p>
+          <h3 data-cms-key="reachHeading">How to reach us</h3>
+          <p data-cms-key="reachCopy">Email is the fastest way to start. Share the problem, the intended agent role, and any constraints you already have.</p>
           <div class="divider"></div>
-          <p class="muted-tight">We respond with a short plan: scope, risks, and a suggested pilot.</p>
-          <h4>What happens next</h4>
+          <p class="muted-tight" data-cms-key="reachNote">We respond with a short plan: scope, risks, and a suggested pilot.</p>
+          <h4 data-cms-key="nextHeading">What happens next</h4>
           <ul class="list-plain">
-            <li>We review your note within one business day.</li>
-            <li>We propose a brief call with a draft scope and risk map.</li>
-            <li>If there’s a fit, we outline a pilot and governance checkpoints.</li>
+            <li data-cms-key="next1">We review your note within one business day.</li>
+            <li data-cms-key="next2">We propose a brief call with a draft scope and risk map.</li>
+            <li data-cms-key="next3">If there’s a fit, we outline a pilot and governance checkpoints.</li>
           </ul>
-          <p class="muted-tight">No marketing spam, no endless forms—just a clear next step.</p>
+          <p class="muted-tight" data-cms-key="nextOutro">No marketing spam, no endless forms—just a clear next step.</p>
         </div>
         <div>
           <div class="quiet-card">
-            <h4>Contact form</h4>
+            <h4 data-cms-key="formTitle">Contact form</h4>
             <form class="form-stack">
               <label>
-                Name
+                <span data-cms-key="formLabelName">Name</span>
                 <input type="text" name="name" placeholder="Your name">
               </label>
               <label>
-                Email
+                <span data-cms-key="formLabelEmail">Email</span>
                 <input type="email" name="email" placeholder="you@example.com">
               </label>
               <label>
-                Project need
+                <span data-cms-key="formLabelProject">Project need</span>
                 <textarea name="project" rows="3" placeholder="What problem should the agent solve?"></textarea>
               </label>
               <div class="cta-buttons">
-                <button class="btn solid" type="submit">Send message</button>
-                <a class="btn ghost" href="mailto:hello@archon.ai">Email us</a>
+                <button class="btn solid" type="submit" data-cms-key="formButton">Send message</button>
+                <a class="btn ghost" href="mailto:hello@archon.ai" data-cms-key="formEmail">Email us</a>
               </div>
             </form>
           </div>
@@ -110,5 +113,7 @@
       </div>
     </div>
   </footer>
+  <script src="content-loader.js"></script>
+  <script>loadContent("contact");</script>
 </body>
 </html>

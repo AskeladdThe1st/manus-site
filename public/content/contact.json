@@ -1,0 +1,20 @@
+{
+  "heroEyebrow": "Contact",
+  "heroTitle": "Move from experimentation to structured, governable AI systems.",
+  "heroLede": "Tell us what you need. We'll share a simple plan and a safe starting pilot. This page sets expectations for the first conversation.",
+  "heroNote": "We reply with scope, risks, and a proposed pilot call—no marketing scripts.",
+  "reachHeading": "How to reach us",
+  "reachCopy": "Email is the fastest way to start. Share the problem, the intended agent role, and any constraints you already have.",
+  "reachNote": "We respond with a short plan: scope, risks, and a suggested pilot.",
+  "nextHeading": "What happens next",
+  "next1": "We review your note within one business day.",
+  "next2": "We propose a brief call with a draft scope and risk map.",
+  "next3": "If there’s a fit, we outline a pilot and governance checkpoints.",
+  "nextOutro": "No marketing spam, no endless forms—just a clear next step.",
+  "formTitle": "Contact form",
+  "formLabelName": "Name",
+  "formLabelEmail": "Email",
+  "formLabelProject": "Project need",
+  "formButton": "Send message",
+  "formEmail": "Email us"
+}

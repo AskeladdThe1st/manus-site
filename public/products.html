@@ -25,34 +25,45 @@
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="page-hero products-hero">
       <div class="container">
-        <p class="eyebrow">Products</p>
-        <h1>Ready-to-ship agents with clear roles, plus room for new specialties.</h1>
-        <p class="page-lede">
-          Tutor agents, interview agents, and a growing catalog run on the same framework so new roles launch quickly and stay governable. This page goes deeper into use cases, fit, and limits.
+        <p class="eyebrow" data-cms-key="heroEyebrow">Products</p>
+        <h1 data-cms-key="heroTitle">Agent systems designed for narrow, measurable roles.</h1>
+        <p class="page-lede" data-cms-key="heroLede">
+          Tutor agents, interview agents, and a growing catalog share the same role-boundary-evaluation spine.
+          This page details fit, use, and limits.
         </p>
+        <div class="grid-two">
+          <div class="quiet-card">
+            <h4 data-cms-key="overviewTitle">System overview</h4>
+            <p class="muted-tight" data-cms-key="overviewCopy">Every agent: defined inputs, explicit outputs, scoped boundaries, and evaluation loops with escalation.</p>
+          </div>
+          <div class="quiet-card">
+            <h4 data-cms-key="excelTitle">Where they excel</h4>
+            <p class="muted-tight" data-cms-key="excelCopy">Structured work that benefits from repeatability, auditability, and governed scaling—not open-ended chat.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section-quiet">
       <div class="container">
-        <h3>Overview of available agents</h3>
+        <h3 data-cms-key="availableHeading">Overview of available agents</h3>
         <div class="grid-three">
           <article class="quiet-card">
-            <h4>Tutor Agents</h4>
-            <p>Structured, subject-specific learning companions. They run scoped drills, track progress, and deliver measurable learning at scale.</p>
-            <p class="muted-tight">Use when teams need repeatable learning, assessments, and reinforcement—not open-ended Q&A.</p>
+            <h4 data-cms-key="tutorTitle">Tutor Agents</h4>
+            <p data-cms-key="tutorCopy">Structured, subject-specific learning companions. They run scoped drills, track progress, and deliver measurable learning at scale.</p>
+            <p class="muted-tight" data-cms-key="tutorNote">Use when teams need repeatable learning, assessments, and reinforcement—not open-ended Q&A.</p>
           </article>
           <article class="quiet-card">
-            <h4>Interview Agents</h4>
-            <p>Conduct structured interviews with constraints, role-specific checklists, and scoring logic to standardize evaluations.</p>
-            <p class="muted-tight">Use when consistency, audit trails, and bias reduction are critical to decisions.</p>
+            <h4 data-cms-key="interviewTitle">Interview Agents</h4>
+            <p data-cms-key="interviewCopy">Conduct structured interviews with constraints, role-specific checklists, and scoring logic to standardize evaluations.</p>
+            <p class="muted-tight" data-cms-key="interviewNote">Use when consistency, audit trails, and bias reduction are critical to decisions.</p>
           </article>
           <article class="quiet-card">
-            <h4>Future Specialized Agents</h4>
-            <p>A growing catalog: onboarding coaches, QA reviewers, operations copilots. Built on the same framework for quick, governable launches.</p>
-            <p class="muted-tight">Use when a narrow role needs repeatable decisions with clear guardrails.</p>
+            <h4 data-cms-key="futureTitle">Future Specialized Agents</h4>
+            <p data-cms-key="futureCopy">A growing catalog: onboarding coaches, QA reviewers, operations copilots. Built on the same framework for quick, governable launches.</p>
+            <p class="muted-tight" data-cms-key="futureNote">Use when a narrow role needs repeatable decisions with clear guardrails.</p>
           </article>
         </div>
       </div>
@@ -61,34 +72,34 @@
     <section class="section-quiet">
       <div class="container grid-two">
         <div>
-          <h3>When to use which agent</h3>
+          <h3 data-cms-key="whenHeading">When to use which agent</h3>
           <ul class="list-plain">
-            <li>Tutor Agents: when teams need repeatable learning with progress tracking and scoped drills.</li>
-            <li>Interview Agents: when decisions depend on consistent questioning, scoring, and auditability.</li>
-            <li>Future Specialized Agents: when a focused role is needed for onboarding, QA, or operations support.</li>
+            <li data-cms-key="whenTutor">Tutor Agents: when teams need repeatable learning with progress tracking and scoped drills.</li>
+            <li data-cms-key="whenInterview">Interview Agents: when decisions depend on consistent questioning, scoring, and auditability.</li>
+            <li data-cms-key="whenFuture">Future Specialized Agents: when a focused role is needed for onboarding, QA, or operations support.</li>
           </ul>
         </div>
         <div>
           <div class="quiet-card">
-            <h4>How they fit</h4>
-            <p>Each agent is defined by a role, a boundary, and an evaluation loop. New roles inherit the same guardrails.</p>
+            <h4 data-cms-key="fitHeading">How they fit</h4>
+            <p data-cms-key="fitCopy">Each agent is defined by a role, a boundary, and an evaluation loop. New roles inherit the same guardrails.</p>
             <div class="divider"></div>
             <div class="mini-diagram">
               <div class="mini-node">
                 <strong>Role</strong>
-                <small>What the agent owns</small>
+                <small data-cms-key="fitRole">What the agent owns</small>
               </div>
               <div class="mini-node">
                 <strong>Boundary</strong>
-                <small>What stays out of scope</small>
+                <small data-cms-key="fitBoundary">What stays out of scope</small>
               </div>
               <div class="mini-node">
                 <strong>Evaluation</strong>
-                <small>How outcomes are scored</small>
+                <small data-cms-key="fitEvaluation">How outcomes are scored</small>
               </div>
               <div class="mini-node">
                 <strong>Escalation</strong>
-                <small>When humans step in</small>
+                <small data-cms-key="fitEscalation">When humans step in</small>
               </div>
             </div>
           </div>
@@ -98,25 +109,75 @@
 
     <section class="section-quiet">
       <div class="container">
-        <h3>Use cases and limits</h3>
+        <h3 data-cms-key="useCasesHeading">Use cases and limits</h3>
         <div class="matrix">
           <div class="matrix-cell">
             <strong>Tutor Agents — good for</strong>
-            <p class="muted-tight">Skill ramp, onboarding cohorts, policy refreshers.</p>
+            <p class="muted-tight" data-cms-key="useTutorGood">Skill ramp, onboarding cohorts, policy refreshers.</p>
             <strong>Limitations</strong>
-            <p class="muted-tight">Not for unbounded brainstorming or replacing instructors; keep scope narrow.</p>
+            <p class="muted-tight" data-cms-key="useTutorLimit">Not for unbounded brainstorming or replacing instructors; keep scope narrow.</p>
           </div>
           <div class="matrix-cell">
             <strong>Interview Agents — good for</strong>
-            <p class="muted-tight">Discovery calls, audits, qualitative research with consistent prompts.</p>
+            <p class="muted-tight" data-cms-key="useInterviewGood">Discovery calls, audits, qualitative research with consistent prompts.</p>
             <strong>Limitations</strong>
-            <p class="muted-tight">Not for final hiring decisions; humans own judgment and escalation.</p>
+            <p class="muted-tight" data-cms-key="useInterviewLimit">Not for final hiring decisions; humans own judgment and escalation.</p>
           </div>
           <div class="matrix-cell">
             <strong>Future agents — good for</strong>
-            <p class="muted-tight">Process QA, policy compliance checks, routine operational reviews.</p>
+            <p class="muted-tight" data-cms-key="useFutureGood">Process QA, policy compliance checks, routine operational reviews.</p>
             <strong>Limitations</strong>
-            <p class="muted-tight">Avoid ambiguous authority; boundaries and approvals remain explicit.</p>
+            <p class="muted-tight" data-cms-key="useFutureLimit">Avoid ambiguous authority; boundaries and approvals remain explicit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-quiet">
+      <div class="container">
+        <h3 data-cms-key="systemMapsHeading">Agent system maps</h3>
+        <div class="grid-two">
+          <div class="quiet-card">
+            <h4 data-cms-key="tutorTitle">Tutor Agent system</h4>
+            <div class="system-map">
+              <div class="map-block map-inputs">
+                <h4>Inputs</h4>
+                <small data-cms-key="tutorInputs">Curriculum, skill level, learning goals.</small>
+              </div>
+              <div class="map-center">
+                <h4>Agent role</h4>
+                <small data-cms-key="tutorRole">Guide, drill, and assess within defined subject boundaries.</small>
+              </div>
+              <div class="map-block map-outputs">
+                <h4>Outputs</h4>
+                <small data-cms-key="tutorOutputs">Exercises, feedback, progress markers.</small>
+              </div>
+              <div class="map-block map-eval">
+                <h4>Evaluation</h4>
+                <small data-cms-key="tutorEvaluation">Mastery checkpoints, score deltas, adherence to scope.</small>
+              </div>
+            </div>
+          </div>
+          <div class="quiet-card">
+            <h4 data-cms-key="interviewTitle">Interview Agent system</h4>
+            <div class="system-map">
+              <div class="map-block map-inputs">
+                <h4>Inputs</h4>
+                <small data-cms-key="interviewInputs">Role to assess, question bank, scoring rubric.</small>
+              </div>
+              <div class="map-center">
+                <h4>Agent role</h4>
+                <small data-cms-key="interviewRole">Conduct structured interviews with constraints and checklists.</small>
+              </div>
+              <div class="map-block map-outputs">
+                <h4>Outputs</h4>
+                <small data-cms-key="interviewOutputs">Responses captured, scores, flagged follow-ups.</small>
+              </div>
+              <div class="map-block map-eval">
+                <h4>Evaluation</h4>
+                <small data-cms-key="interviewEvaluation">Calibration checks, bias checks, rubric adherence.</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -158,5 +219,7 @@
       </div>
     </div>
   </footer>
+  <script src="content-loader.js"></script>
+  <script>loadContent("products");</script>
 </body>
 </html>
